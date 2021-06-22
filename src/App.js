@@ -30,7 +30,7 @@ return(
             <Route path="/Add Student" component={Home1} exact/>
             <Route path="/View Student" component={AllStudent} exact/>
             <Route path="/About" component={About} exact/>
-            <Route path="/update/:id" component={Update} exact/>
+            <Route path="/update" component={Update} exact/>
            </Col>
          </Row>
        </Container>

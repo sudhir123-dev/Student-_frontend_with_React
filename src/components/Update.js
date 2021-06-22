@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { Button, Form, FormGroup, Label, Input, FormText,Container } from 'reactstrap';
 import base_url from '../api/bootapi';
 
-const Update= (id) => {
+const Update= () => {
 
 const [student,setStudent]=useState({});
 //form handler function
@@ -27,22 +27,6 @@ const postDataToServer=(data)=>{
     }
   );
 }
-
-
-/*useEffect(()=>{
-    getDataFromServer(id);
-},[]);
-
-const getDataFromServer=(id)=>{
-    axios.get(`${base_url}/read/${id}`).then(
-        (response)=>{
-            console.log(response);
-            setStudent(response);
-        }
-    );
-}*/
-
-
   return (
     <Form className="my-2" onSubmit={handleForm}>
       <h3 className="text-center ">Update Details</h3>

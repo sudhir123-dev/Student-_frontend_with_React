@@ -27,7 +27,7 @@ const Student=({student,update})=>{
 const history=useHistory();
 const routeChange=(id)=>{
 console.log(id);
-    let path=`/update/id`;
+    let path=`/update`;
     history.push(path);
 }
 
